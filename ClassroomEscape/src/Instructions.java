@@ -17,6 +17,12 @@ public class Instructions extends javax.swing.JFrame {
         initComponents();
     }
 
+    public void GoToMainMenu()
+    {
+        this.setVisible(false);
+        MainMenu frame2 = new MainMenu();
+        frame2.setVisible(true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -168,10 +174,7 @@ public class Instructions extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Instructions frame = new Instructions();
-        this.setVisible(false);
-        MainMenu frame2 = new MainMenu();
-        frame2.setVisible(true);
+        GoToMainMenu();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
