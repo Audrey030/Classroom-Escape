@@ -150,7 +150,9 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Name frame2 = new Name();
+        frame2.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -194,7 +196,12 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
     }
-
+    public void ResetGame()
+    {
+        UnlockedFeatures.power=false;
+        UnlockedFeatures.computerUnlocked=false;
+        UnlockedFeatures computerAccessibility = new UnlockedFeatures();
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -16,3 +16,19 @@
         //frame2.setVisible(true);
     //}
 //}
+public class Buttons
+{
+    public String PlayerName;
+
+    
+    public Buttons(String player)
+    {
+        PlayerName=player;
+    }
+    
+    public String getName()
+    {
+    
+        return PlayerName;
+    }
+}
