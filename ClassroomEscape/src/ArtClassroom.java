@@ -54,6 +54,11 @@ public class ArtClassroom extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
         jButton5.setText("Drawer");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -147,6 +152,21 @@ public class ArtClassroom extends javax.swing.JFrame {
         ArtWall frame2 = new ArtWall();
         frame2.setVisible(true);   
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (UnlockedFeatures.drawer==true)
+        {
+            this.setVisible(false);
+            ArtDrawerUnlocked frame2 = new ArtDrawerUnlocked();
+            frame2.setVisible(true);   
+        }
+        else 
+        {
+            this.setVisible(false);
+            ArtDrawer frame2 = new ArtDrawer();
+            frame2.setVisible(true);  
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
