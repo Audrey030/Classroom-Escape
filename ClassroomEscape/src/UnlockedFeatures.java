@@ -12,4 +12,5 @@ public class UnlockedFeatures
 {
     public static boolean power;
     public static boolean computerUnlocked;
+    public static boolean drawer;
 }
