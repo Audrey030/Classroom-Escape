@@ -3,18 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/MathDoor.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/HistoryNotes.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/ArtDrawer.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/HistoryExitTicket.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/MainMenu.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/About.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/ArtClassroom.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/ArtDoor.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/ArtDrawerUnlocked.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/UnlockedFeatures.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/ArtWall.java</file>
-            <file>file:/F:/ClassroomEscape2/Classroom-Escape/ClassroomEscape/src/HistoryClassroom.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathDesk.java</file>
+            <file>file:/F:/ClassroomEscape/src/Buttons.java</file>
+            <file>file:/F:/ClassroomEscape/src/Name.java</file>
+            <file>file:/F:/ClassroomEscape/src/Story.java</file>
+            <file>file:/F:/ClassroomEscape/src/MainMenu.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathClassroom.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathComputer.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathDoor.java</file>
+            <file>file:/F:/ClassroomEscape/src/About.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathComputerUnlocked.java</file>
+            <file>file:/F:/ClassroomEscape/src/Instructions.java</file>
+            <file>file:/F:/ClassroomEscape/src/MathWhiteboard.java</file>
         </group>
     </open-files>
 </project-private>

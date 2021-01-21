@@ -43,11 +43,6 @@ public class ArtClassroom extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
         jButton3.setText("Door");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
 
         jButton4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
         jButton4.setText("Wall");
@@ -172,12 +167,6 @@ public class ArtClassroom extends javax.swing.JFrame {
             frame2.setVisible(true);  
         }
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        this.setVisible(false);
-        ArtDoor frame2 = new ArtDoor();
-        frame2.setVisible(true);   
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
