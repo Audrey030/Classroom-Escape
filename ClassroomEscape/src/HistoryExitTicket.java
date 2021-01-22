@@ -27,6 +27,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -55,44 +56,57 @@ public class HistoryExitTicket extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.red));
 
-        jLabel2.setFont(new java.awt.Font("Ink Free", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel2.setText("Exit Ticket");
 
-        jLabel3.setFont(new java.awt.Font("Ink Free", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel3.setText("Name:");
 
-        jRadioButton1.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton1.setText("Moon Landing");
 
-        jRadioButton2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton2.setText("9/11");
 
-        jRadioButton3.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup1.add(jRadioButton3);
+        jRadioButton3.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton3.setText("Sinking of the Titanic");
 
-        jRadioButton4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup1.add(jRadioButton4);
+        jRadioButton4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton4.setText("COVID-19");
 
-        jLabel4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel4.setText("1. Which happened second out of the following events?");
 
-        jLabel5.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel5.setText("2. How many World Wars have there been up to present date?");
 
-        jRadioButton5.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup2.add(jRadioButton5);
+        jRadioButton5.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton5.setText("1");
 
-        jRadioButton6.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup2.add(jRadioButton6);
+        jRadioButton6.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton6.setText("2");
 
-        jRadioButton7.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup2.add(jRadioButton7);
+        jRadioButton7.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton7.setText("3");
 
-        jRadioButton8.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        buttonGroup2.add(jRadioButton8);
+        jRadioButton8.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jRadioButton8.setText("4");
 
         jButton2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
         jButton2.setText("Hand in the exit ticket");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -166,7 +180,13 @@ public class HistoryExitTicket extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Back To Classroom");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -179,7 +199,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 10, Short.MAX_VALUE)
+                        .addGap(0, 30, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton1)
@@ -220,6 +240,21 @@ public class HistoryExitTicket extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+        HistoryClassroom frame2 = new HistoryClassroom();
+        frame2.setVisible(true);  
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if ((jRadioButton1.isSelected())&&(jRadioButton6.isSelected()))
+        {
+            this.setVisible(false);
+            End frame2 = new End();
+            frame2.setVisible(true);  
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -257,6 +292,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
