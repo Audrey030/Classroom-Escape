@@ -15,6 +15,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
      */
     public HistoryExitTicket() {
         initComponents();
+        jLabel3.setText("Name: "+PlayerName.name);
     }
 
     /**

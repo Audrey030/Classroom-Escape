@@ -15,6 +15,7 @@ public class Story extends javax.swing.JFrame {
      */
     public Story() {
         initComponents();
+        jLabel6.setText("Good luck "+PlayerName.name+"!");
         //jLabel6.setText("Good luck "+name1.getName());
     }
 

@@ -67,6 +67,11 @@ public class MathDesk extends javax.swing.JFrame {
         });
 
         jButton1.setText("Submit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Back To Classroom");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -165,6 +170,12 @@ public class MathDesk extends javax.swing.JFrame {
         frame2.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int n = Integer.parseInt(jTextField1.getText());
+        String fact = String.valueOf(factorial(n));
+        jTextField2.setText(fact);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -199,7 +210,14 @@ public class MathDesk extends javax.swing.JFrame {
             }
         });
     }
-
+        static int factorial(int n)
+        {
+            if (n == 0)
+                return 1;    
+            else    
+                return(n * factorial(n-1));    
+        }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

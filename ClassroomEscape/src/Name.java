@@ -177,7 +177,8 @@ public class Name extends javax.swing.JFrame {
 
         public void myMethod() 
         {
-        Buttons name1 = new Buttons(jTextField1.getText());
+            PlayerName.name=(jTextField1.getText());
+            PlayerName player = new PlayerName();
         //Button.PlayerName = jTextField1.getText();
         };
 
