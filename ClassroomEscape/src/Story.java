@@ -36,26 +36,28 @@ public class Story extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel1.setText("It's a Monday morning and you go to school. You enter your first classroom.");
+        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel1.setText("It's a Monday morning and you go to school. You enter your");
 
-        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel2.setText("The lights are on but the classroom is completely empty. The doors suddenly");
+        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel2.setText("completely empty. The door suddenly slams shut behind you");
 
-        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel3.setText("slam shut behind you and when you try to open it, you realise it's locked.");
+        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel3.setText("and when you try to open it, you realise it's locked. You can't");
 
-        jLabel4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel4.setText("You can't stay trapped forever, so you explore the classroom looking for a");
+        jLabel4.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel4.setText("stay trapped forever, so you explore the classroom looking");
 
-        jLabel5.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel5.setText("way out...");
+        jLabel5.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel5.setText("for a way out...");
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 36)); // NOI18N
         jButton1.setText("Continue");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,8 +65,11 @@ public class Story extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel6.setText("Good luck");
+
+        jLabel7.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel7.setText("first classroom. The lights are on but the classroom is ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -83,8 +88,9 @@ public class Story extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
-                            .addComponent(jLabel6))
-                        .addGap(0, 5, Short.MAX_VALUE)))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
+                        .addGap(0, 53, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -92,17 +98,19 @@ public class Story extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5)
-                .addGap(58, 58, 58)
+                .addGap(60, 60, 60)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -170,6 +178,7 @@ public class Story extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

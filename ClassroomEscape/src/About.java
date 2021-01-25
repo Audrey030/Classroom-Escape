@@ -52,6 +52,7 @@ public class About extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         jLabel3.setText("Hi, this is Audrey. This game is for an ICS4U project. I decided to create");
 
+        jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton2.setText("Main Menu");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +94,7 @@ public class About extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton2)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,13 +113,14 @@ public class About extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(60, 60, 60)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Exit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,8 +155,8 @@ public class About extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 

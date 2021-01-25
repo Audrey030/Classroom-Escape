@@ -66,6 +66,7 @@ public class MathDesk extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Submit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +74,7 @@ public class MathDesk extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton2.setText("Back To Classroom");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,15 +105,14 @@ public class MathDesk extends javax.swing.JFrame {
                                     .addComponent(jLabel4)
                                     .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton1)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
-                                        .addComponent(jTextField2))))
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 517, Short.MAX_VALUE)
+                                    .addComponent(jTextField1)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(345, 345, 345)
                                 .addComponent(jLabel6)))
-                        .addGap(0, 334, Short.MAX_VALUE)))
+                        .addGap(0, 434, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -135,7 +136,7 @@ public class MathDesk extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );

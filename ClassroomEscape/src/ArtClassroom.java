@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +12,29 @@
  * @author audre
  */
 public class ArtClassroom extends javax.swing.JFrame {
-
+    ImageIcon icon = new ImageIcon("src\\images\\door_1.PNG");
+    ImageIcon paintings = new ImageIcon("src\\images\\paintings.PNG");
+    ImageIcon drawer = new ImageIcon("src\\images\\openDrawer.PNG");
+    ImageIcon drawerClosed = new ImageIcon("src\\images\\closedDrawer.PNG");
     /**
      * Creates new form ArtClassroom
      */
     public ArtClassroom() {
         initComponents();
+        jButton3.setText("");
+        jButton3.setIcon(icon);
+        jButton4.setText("");
+        jButton4.setIcon(paintings);
+        if (UnlockedFeatures.drawer==true)
+        {
+            jButton5.setText("");
+            jButton5.setIcon(drawer);
+        }
+        else if (UnlockedFeatures.drawer==false)
+        {
+            jButton5.setText("");
+            jButton5.setIcon(drawerClosed);
+        }
     }
 
     /**
@@ -69,24 +89,17 @@ public class ArtClassroom extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 558, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton4)
-                        .addGap(321, 321, 321))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5)
-                        .addGap(493, 493, 493))))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(jButton3)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 596, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,14 +107,14 @@ public class ArtClassroom extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(125, 125, 125)
-                .addComponent(jButton4)
-                .addGap(15, 15, 15)
-                .addComponent(jButton3)
-                .addGap(165, 165, 165)
-                .addComponent(jButton5)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3)
+                    .addComponent(jButton5)
+                    .addComponent(jButton4))
+                .addContainerGap(653, Short.MAX_VALUE))
         );
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Exit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +122,7 @@ public class ArtClassroom extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton2.setText("Main Menu");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -75,6 +75,7 @@ public class Instructions extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         jLabel8.setText("Good luck! ");
 
+        jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton2.setText("Main Menu");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,7 +99,7 @@ public class Instructions extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel8)
                     .addComponent(jButton2))
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(145, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,7 +120,7 @@ public class Instructions extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(60, 60, 60)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -127,6 +128,7 @@ public class Instructions extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 204, 204));
         jPanel2.setForeground(new java.awt.Color(255, 204, 255));
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Exit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

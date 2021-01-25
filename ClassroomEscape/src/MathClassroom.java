@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,12 @@
  * @author audre
  */
 public class MathClassroom extends javax.swing.JFrame {
-
+    ImageIcon icon = new ImageIcon("src\\images\\door_1.PNG");
+    ImageIcon desk = new ImageIcon("src\\images\\desk.PNG");
+    ImageIcon whiteboard = new ImageIcon("src\\images\\whiteboard.PNG");
+    ImageIcon compLocked = new ImageIcon("src\\images\\compLocked_1.PNG");
+    ImageIcon compUnlocked = new ImageIcon("src\\images\\compUnlocked_1.PNG");
+    
     /**
      * Creates new form MathClassroom
      */
@@ -23,6 +31,22 @@ public class MathClassroom extends javax.swing.JFrame {
         {
             jButton4.setEnabled(false);
         }
+        if (UnlockedFeatures.computerUnlocked==true)
+        {
+            jButton4.setText("");
+            jButton4.setIcon(compUnlocked);
+        }
+        else if (UnlockedFeatures.computerUnlocked==false)
+        {
+            jButton4.setText("");
+            jButton4.setIcon(compLocked);
+        }
+        jButton6.setText("");
+        jButton6.setIcon(icon);
+        jButton5.setText("");
+        jButton5.setIcon(desk);
+        jButton3.setText("");
+        jButton3.setIcon(whiteboard);
     }
 
     /**
@@ -87,44 +111,42 @@ public class MathClassroom extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(jButton3)))
+                .addContainerGap()
+                .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(411, 411, 411)
-                .addComponent(jButton5)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(629, Short.MAX_VALUE)
+                .addGap(94, 94, 94)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton4)
-                        .addGap(119, 119, 119))
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(109, 109, 109))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton6)
-                        .addGap(428, 428, 428))))
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(156, 156, 156))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(143, 143, 143)
-                .addComponent(jButton6)
-                .addGap(57, 57, 57)
-                .addComponent(jButton3)
-                .addGap(29, 29, 29)
-                .addComponent(jButton4)
-                .addGap(29, 29, 29)
-                .addComponent(jButton5)
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addGap(68, 68, 68)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3)
+                    .addComponent(jButton6))
+                .addGap(72, 72, 72)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4)
+                    .addComponent(jButton5))
+                .addContainerGap(851, Short.MAX_VALUE))
         );
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Exit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,6 +154,7 @@ public class MathClassroom extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton2.setText("Main Menu");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

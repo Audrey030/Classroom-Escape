@@ -45,6 +45,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
 
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jButton1.setText("Back To Classroom");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +62,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1)
-                        .addGap(0, 655, Short.MAX_VALUE))
+                        .addGap(0, 755, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)))
@@ -78,7 +79,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(103, 103, 103)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 507, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 591, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
