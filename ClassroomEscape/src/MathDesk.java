@@ -15,6 +15,7 @@ public class MathDesk extends javax.swing.JFrame {
      */
     public MathDesk() {
         initComponents();
+        jLabel7.setText("");
     }
 
     /**
@@ -37,18 +38,19 @@ public class MathDesk extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
         jLabel1.setText("Desk");
 
-        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
-        jLabel2.setText("It calculates the factorial of the entered integer...");
+        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel2.setText("It calculates the factorial of the entered positive integer...");
 
-        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel3.setText("There is a calculator on the desk...");
 
         jLabel4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
@@ -82,8 +84,11 @@ public class MathDesk extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Ink Free", 0, 60)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MV Boli", 0, 60)); // NOI18N
         jLabel6.setText("n!");
+
+        jLabel7.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
+        jLabel7.setText("jLabel7");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -108,12 +113,15 @@ public class MathDesk extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton1)
                                     .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 517, Short.MAX_VALUE)
-                                    .addComponent(jTextField1)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(345, 345, 345)
-                                .addComponent(jLabel6)))
-                        .addGap(0, 434, Short.MAX_VALUE)))
+                                    .addComponent(jTextField1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel7)))
+                        .addGap(0, 1, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(446, 446, 446)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,19 +132,20 @@ public class MathDesk extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(45, 45, 45)
+                .addGap(49, 49, 49)
                 .addComponent(jLabel6)
-                .addGap(39, 39, 39)
+                .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 179, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -172,9 +181,31 @@ public class MathDesk extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int n = Integer.parseInt(jTextField1.getText());
-        String fact = String.valueOf(factorial(n));
-        jTextField2.setText(fact);
+        try
+        {
+            int n = Integer.parseInt(jTextField1.getText());
+            if (n>12)
+            {
+                jLabel7.setText("Factorial out of range for integers.");
+                jTextField2.setText("");
+            }
+            else if (n>=0)
+            {
+                String fact = String.valueOf(factorial(n));
+                jLabel7.setText("");
+                jTextField2.setText(fact);               
+            }
+            else if (n<0)
+            {
+                jLabel7.setText("Please enter a positive integer");
+                jTextField2.setText("");
+            }
+        }
+        catch (NumberFormatException e)
+        {
+            jLabel7.setText("Please enter an integer.");
+            jTextField2.setText("");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -228,6 +259,7 @@ public class MathDesk extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;

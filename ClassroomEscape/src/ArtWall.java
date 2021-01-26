@@ -52,13 +52,13 @@ public class ArtWall extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel2.setText("Michelangelo");
 
-        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel3.setText("Monet");
 
-        jLabel4.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel4.setText("Picasso");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -75,26 +75,26 @@ public class ArtWall extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(186, 186, 186)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(245, 245, 245)
                 .addComponent(jLabel2)
                 .addGap(213, 213, 213)
                 .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(129, 129, 129))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(115, 115, 115)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel4)
                     .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 581, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 569, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );

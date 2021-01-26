@@ -36,6 +36,7 @@ public class About extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
 
@@ -49,7 +50,7 @@ public class About extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
         jLabel2.setText("About");
 
-        jLabel3.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel3.setText("Hi, this is Audrey. This game is for an ICS4U project. I decided to create");
 
         jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
@@ -60,20 +61,23 @@ public class About extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel4.setText("a game based on escape rooms since I really enjoy them in real life. ");
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel5.setText("The game is school themed, so there are certain elements that require basic");
 
-        jLabel6.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel6.setText("highschool knowledge. Other than some potentially challenging puzzles for ");
 
-        jLabel7.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel7.setText("younger children, this game can be played by all age groups!");
 
-        jLabel8.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel8.setText("Hope you have fun!");
+
+        jLabel9.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
+        jLabel9.setText("Audrey Lun ICS4U 2020-2021");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -90,18 +94,19 @@ public class About extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel7)
-                            .addComponent(jLabel8)))
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton2)))
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(169, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jLabel2)
-                .addGap(77, 77, 77)
+                .addGap(47, 47, 47)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
@@ -111,9 +116,11 @@ public class About extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
-                .addGap(60, 60, 60)
+                .addGap(51, 51, 51)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
+                .addGap(75, 75, 75)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -220,6 +227,7 @@ public class About extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

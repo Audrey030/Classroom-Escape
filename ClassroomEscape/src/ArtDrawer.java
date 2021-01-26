@@ -54,7 +54,7 @@ public class ArtDrawer extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel1.setText("The drawer is locked...");
 
         jLabel2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
@@ -113,7 +113,7 @@ public class ArtDrawer extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
                     .addComponent(jButton1))
-                .addContainerGap(651, Short.MAX_VALUE))
+                .addContainerGap(636, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

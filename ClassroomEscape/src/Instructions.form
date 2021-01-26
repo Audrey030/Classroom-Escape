@@ -65,7 +65,7 @@
                       <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton2" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="145" max="32767" attributes="0"/>
+                  <EmptySpace pref="116" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -88,7 +88,7 @@
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="149" max="32767" attributes="0"/>
+                  <EmptySpace pref="107" max="32767" attributes="0"/>
                   <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -107,7 +107,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="The goal of the game is to escape all three classrooms!"/>
           </Properties>
@@ -115,7 +115,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="The player starts in one classroom and must use their knowledge to solve puzzles"/>
           </Properties>
@@ -123,7 +123,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="and unlock doors to progress throughout the game until they complete all classes."/>
           </Properties>
@@ -131,7 +131,7 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Interact with the classroom by clicking on buttons that represent objects to"/>
           </Properties>
@@ -139,7 +139,7 @@
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="discover clues. Use the clues to unlock other objects within the room. Locks"/>
           </Properties>
@@ -147,7 +147,7 @@
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="require passwords that the player must input when prompted."/>
           </Properties>
@@ -155,7 +155,7 @@
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monospaced" size="24" style="0"/>
+              <Font name="Modern No. 20" size="36" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Good luck! "/>
           </Properties>

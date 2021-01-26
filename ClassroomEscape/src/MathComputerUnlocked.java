@@ -43,7 +43,7 @@ public class MathComputerUnlocked extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
         jLabel1.setText("Authorized!");
 
         jLabel2.setText("Image");
