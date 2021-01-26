@@ -41,7 +41,7 @@ public class HistoryNotes extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 153));
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel1.setText("history notes:");
 
         jLabel3.setText("jLabel3");
@@ -80,7 +80,7 @@ public class HistoryNotes extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(32, 32, 32)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 664, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 649, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );

@@ -21,6 +21,7 @@ public class MathComputer extends javax.swing.JFrame {
         initComponents();
         jLabel4.setText("");
         jLabel4.setIcon(icon);
+        jLabel5.setText("");
     }
 
     /**
@@ -40,6 +41,7 @@ public class MathComputer extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,17 +50,17 @@ public class MathComputer extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Ink Free", 0, 64)); // NOI18N
         jLabel1.setText("Locked");
 
-        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel2.setText("Enter password:");
 
-        jTextField1.setFont(new java.awt.Font("Ink Free", 0, 24)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("MV Boli", 0, 36)); // NOI18N
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,10 +76,13 @@ public class MathComputer extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MV Boli", 0, 60)); // NOI18N
         jLabel3.setText("7!");
 
         jLabel4.setText("jLabel4");
+
+        jLabel5.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel5.setText("jLabel5");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -87,19 +92,6 @@ public class MathComputer extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(229, 342, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(229, 229, 229)
-                        .addComponent(jLabel3)))
-                .addGap(335, 335, 335))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -107,8 +99,22 @@ public class MathComputer extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(495, 495, 495)
-                        .addComponent(jLabel4)))
+                        .addComponent(jLabel4))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(571, 571, 571)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(229, 261, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel5))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(335, 335, 335))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,8 +130,10 @@ public class MathComputer extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 353, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -158,10 +166,14 @@ public class MathComputer extends javax.swing.JFrame {
         String password = (jTextField1.getText());
         if (password.equals("5040"))
         {
-        compUnlock();
-        this.setVisible(false);
-        MathComputerUnlocked frame2 = new MathComputerUnlocked();
-        frame2.setVisible(true); 
+            compUnlock();
+            this.setVisible(false);
+            MathComputerUnlocked frame2 = new MathComputerUnlocked();
+            frame2.setVisible(true); 
+        }
+        else 
+        {
+            jLabel5.setText("Try again...");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -217,6 +229,7 @@ public class MathComputer extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

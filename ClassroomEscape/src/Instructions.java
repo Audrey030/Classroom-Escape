@@ -54,25 +54,25 @@ public class Instructions extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
         jLabel1.setText("Instructions");
 
-        jLabel2.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel2.setText("The goal of the game is to escape all three classrooms!");
 
-        jLabel3.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel3.setText("The player starts in one classroom and must use their knowledge to solve puzzles");
 
-        jLabel4.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel4.setText("and unlock doors to progress throughout the game until they complete all classes.");
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel5.setText("Interact with the classroom by clicking on buttons that represent objects to");
 
-        jLabel6.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel6.setText("discover clues. Use the clues to unlock other objects within the room. Locks");
 
-        jLabel7.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel7.setText("require passwords that the player must input when prompted.");
 
-        jLabel8.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Modern No. 20", 0, 36)); // NOI18N
         jLabel8.setText("Good luck! ");
 
         jButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
@@ -99,7 +99,7 @@ public class Instructions extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel8)
                     .addComponent(jButton2))
-                .addContainerGap(145, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +120,7 @@ public class Instructions extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(60, 60, 60)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );

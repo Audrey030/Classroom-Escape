@@ -40,7 +40,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ink Free", 0, 48)); // NOI18N
         jLabel1.setText("There is paint in the drawers!");
 
         jLabel2.setText("jLabel2");
@@ -62,7 +62,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1)
-                        .addGap(0, 755, Short.MAX_VALUE))
+                        .addGap(0, 604, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)))
@@ -79,7 +79,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(103, 103, 103)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 591, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 576, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
