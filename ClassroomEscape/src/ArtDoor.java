@@ -1,11 +1,9 @@
 
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Final lock for the art classroom
+//Leads to history classroom
+//password is the two paint colours in the drawer mixed together (orange)
 
 /**
  *
@@ -131,7 +129,7 @@ public class ArtDoor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
                 .addGap(18, 18, 18)
@@ -174,6 +172,7 @@ public class ArtDoor extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (jTextField1.getText().toLowerCase().equals("orange"))
         {
+            Sound.PlayUnlockSound();
             this.setVisible(false);
             HistoryClassroom frame2 = new HistoryClassroom();
             frame2.setVisible(true);
@@ -181,6 +180,7 @@ public class ArtDoor extends javax.swing.JFrame {
         else 
         {
             jLabel3.setText("Try again...");
+            Sound.PlayWrongSound();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 

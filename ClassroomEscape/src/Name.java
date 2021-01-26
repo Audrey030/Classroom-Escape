@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-import java.awt.*;  
-import java.awt.event.*;  
+//Player enters their name 
+//Object of the PlayerName class is created
+
+
 /**
  *
  * @author audre
@@ -122,7 +119,7 @@ public class Name extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        myMethod();
+        createName();
         
         this.setVisible(false);
         Story frame = new Story();
@@ -187,18 +184,11 @@ public class Name extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 
-        public void myMethod() 
+        public void createName() 
         {
             PlayerName.name=(jTextField1.getText());
             PlayerName player = new PlayerName();
-        //Button.PlayerName = jTextField1.getText();
         };
-
 
 }
 
-        //Buttons name = new Buttons(jTextField1.getText());
-
-        //this.setVisible(false);
-        //Story frame = new Story();
-        //frame.setVisible(true);

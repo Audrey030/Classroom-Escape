@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+//The end screen of the game!
+//Player can go back to main menu or exit
 /**
  *
  * @author audre

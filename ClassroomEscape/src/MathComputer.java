@@ -1,11 +1,8 @@
 
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//AFter being powered by the whiteboard puzzle, the player needs to enter the password (5040)
+//This will show a hint on screen for the door
 
 /**
  *
@@ -133,7 +130,7 @@ public class MathComputer extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 376, Short.MAX_VALUE)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
@@ -166,7 +163,8 @@ public class MathComputer extends javax.swing.JFrame {
         String password = (jTextField1.getText());
         if (password.equals("5040"))
         {
-            compUnlock();
+            UnlockedFeatures.compUnlock();
+            Sound.PlayUnlockSound();
             this.setVisible(false);
             MathComputerUnlocked frame2 = new MathComputerUnlocked();
             frame2.setVisible(true); 
@@ -174,6 +172,7 @@ public class MathComputer extends javax.swing.JFrame {
         else 
         {
             jLabel5.setText("Try again...");
+            Sound.PlayWrongSound();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -217,11 +216,7 @@ public class MathComputer extends javax.swing.JFrame {
             }
         });
     }
-    public void compUnlock()
-    {
-        UnlockedFeatures.computerUnlocked=true;
-        UnlockedFeatures loginSuccess = new UnlockedFeatures();
-    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

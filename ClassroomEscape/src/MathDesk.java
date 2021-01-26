@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//A factorial calculator for the players to use if they don't have their own
+//Used to help find the password for the math computer
 
 /**
  *
@@ -188,6 +185,7 @@ public class MathDesk extends javax.swing.JFrame {
             {
                 jLabel7.setText("Factorial out of range for integers.");
                 jTextField2.setText("");
+                Sound.PlayWrongSound();
             }
             else if (n>=0)
             {
@@ -199,12 +197,14 @@ public class MathDesk extends javax.swing.JFrame {
             {
                 jLabel7.setText("Please enter a positive integer");
                 jTextField2.setText("");
+                Sound.PlayWrongSound();
             }
         }
         catch (NumberFormatException e)
         {
             jLabel7.setText("Please enter an integer.");
             jTextField2.setText("");
+            Sound.PlayWrongSound();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

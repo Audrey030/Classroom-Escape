@@ -1,11 +1,8 @@
 
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//shows hint to unlock door
+//the two paint colours mixed together is the password for the door
 
 /**
  *

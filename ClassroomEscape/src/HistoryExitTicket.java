@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+//Final puzzle of the game!
+//Players must use the notes to help them determine the correct answers on the exit ticket
+// Answers:
+// 1. moon landing
+// 2. 2
 /**
  *
  * @author audre
@@ -270,6 +269,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if ((jRadioButton1.isSelected())&&(jRadioButton6.isSelected()))
         {
+            Sound.PlayUnlockSound();
             this.setVisible(false);
             End frame2 = new End();
             frame2.setVisible(true);  
@@ -278,6 +278,7 @@ public class HistoryExitTicket extends javax.swing.JFrame {
         {
             jLabel6.setText("You need to get all answers correct to leave...");
             jLabel7.setText("Try again...");
+            Sound.PlayWrongSound();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -1,12 +1,9 @@
 
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+//This is the final puzzle in the math classroom
+//Players will need to enter the correct number for abc (435)
+//This will lead players to the next classroom
 /**
  *
  * @author audre
@@ -234,6 +231,7 @@ public class MathDoor extends javax.swing.JFrame {
             int c = Integer.parseInt(jTextField3.getText());
             if ((a == 4)&&(b == 3)&&(c == 5))
             {
+                Sound.PlayUnlockSound();
                 this.setVisible(false);
                 ArtClassroom frame2 = new ArtClassroom();
                 frame2.setVisible(true); 
@@ -241,11 +239,13 @@ public class MathDoor extends javax.swing.JFrame {
             else 
             {
                 jLabel6.setText("Hm... try again");
+                Sound.PlayWrongSound();
             }
         }
         catch(NumberFormatException e)
         {
             jLabel6.setText("It's a number lock, so try using numbers");
+            Sound.PlayWrongSound();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
