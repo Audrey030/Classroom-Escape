@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//jFrame for the whiteboard.
+//Shows a fraction equation.
+//Reads input and if the answer is correct, unlocks the computer button in the math classroom frame.
 
 /**
  *
@@ -195,19 +193,23 @@ public class MathWhiteboard extends javax.swing.JFrame {
             int denominator = Integer.parseInt(jTextField2.getText());
             if ((numerator == 3)&&(denominator == 10))
             {
-                computerOn();
+                UnlockedFeatures.computerOn();
+                Sound.PlayUnlockSound();
                 this.setVisible(false);
                 MathClassroom frame2 = new MathClassroom();
                 frame2.setVisible(true); 
+                
             }
             else
             {
                 jLabel6.setText("Try again...");
+                Sound.PlayWrongSound();
             }
         }
         catch (NumberFormatException e)
         {
             jLabel6.setText("Use integers...");
+            Sound.PlayWrongSound();
         }
                 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -253,13 +255,6 @@ public class MathWhiteboard extends javax.swing.JFrame {
         });
     }
     
-    
-        public void computerOn() 
-        {
-            UnlockedFeatures.power=true;
-            UnlockedFeatures computerAccessibility = new UnlockedFeatures();
- 
-        };
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

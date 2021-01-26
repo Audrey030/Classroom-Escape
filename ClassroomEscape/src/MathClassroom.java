@@ -1,11 +1,7 @@
 
 import javax.swing.ImageIcon;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//First classroom 
+//Player needs to explore the objects in the class to find hints to unlock the door
 
 /**
  *
@@ -23,20 +19,20 @@ public class MathClassroom extends javax.swing.JFrame {
      */
     public MathClassroom() {
         initComponents();
-        if (UnlockedFeatures.power==true)
+        if (UnlockedFeatures.power==true)//computer button becomes available
         {
             jButton4.setEnabled(true);
         }
-        else if (UnlockedFeatures.power==false)
+        else if (UnlockedFeatures.power==false)//The computer button is disabled until the whiteboard question is answered
         {
             jButton4.setEnabled(false);
         }
-        if (UnlockedFeatures.computerUnlocked==true)
+        if (UnlockedFeatures.computerUnlocked==true)//Shows an unlocked computer icon
         {
             jButton4.setText("");
             jButton4.setIcon(compUnlocked);
         }
-        else if (UnlockedFeatures.computerUnlocked==false)
+        else if (UnlockedFeatures.computerUnlocked==false)//Shows a locked computer icon
         {
             jButton4.setText("");
             jButton4.setIcon(compLocked);
@@ -208,7 +204,7 @@ public class MathClassroom extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (UnlockedFeatures.computerUnlocked==true)
+        if (UnlockedFeatures.computerUnlocked==true)//if the computer is already unlocked then the player can access it without having to enter the password again
         {
             this.setVisible(false);
             MathComputerUnlocked frame2 = new MathComputerUnlocked();

@@ -1,11 +1,7 @@
 
 import javax.swing.ImageIcon;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Second classroom
 
 /**
  *
@@ -25,12 +21,12 @@ public class ArtClassroom extends javax.swing.JFrame {
         jButton3.setIcon(icon);
         jButton4.setText("");
         jButton4.setIcon(paintings);
-        if (UnlockedFeatures.drawer==true)
+        if (UnlockedFeatures.drawer==true)//shows open drawer
         {
             jButton5.setText("");
             jButton5.setIcon(drawer);
         }
-        else if (UnlockedFeatures.drawer==false)
+        else if (UnlockedFeatures.drawer==false)//shows closed drawer
         {
             jButton5.setText("");
             jButton5.setIcon(drawerClosed);
@@ -173,7 +169,7 @@ public class ArtClassroom extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        if (UnlockedFeatures.drawer==true)
+        if (UnlockedFeatures.drawer==true)//goes to the unlocked drawer frame since the drawer was already unlocked
         {
             this.setVisible(false);
             ArtDrawerUnlocked frame2 = new ArtDrawerUnlocked();

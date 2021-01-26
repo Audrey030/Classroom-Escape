@@ -1,19 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-import javax.swing.ImageIcon;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.JPanel;
-import java.io.*;
-import java.sql.*;
+//Main menu of the game. 
+//Program starts on this frame when run
+
 /**
  *
  * @author audre
@@ -152,7 +139,7 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        resetGame();
+        UnlockedFeatures.resetGame();
         this.setVisible(false);
         Name frame2 = new Name();
         frame2.setVisible(true);
@@ -199,13 +186,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
     }
-    public void resetGame()
-    {
-        UnlockedFeatures.power=false;
-        UnlockedFeatures.computerUnlocked=false;
-        UnlockedFeatures.drawer=false;
-        UnlockedFeatures computerAccessibility = new UnlockedFeatures();
-    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
