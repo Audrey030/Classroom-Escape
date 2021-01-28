@@ -65,7 +65,7 @@ public class ArtDrawerUnlocked extends javax.swing.JFrame {
                         .addComponent(jButton1)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+                .addGap(201, 201, 201)
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
