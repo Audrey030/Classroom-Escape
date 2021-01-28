@@ -17,12 +17,11 @@ public class Sound {
     {
         try
         {
-            File sound = new File("F:\\ClassroomEscape2\\Classroom-Escape\\ClassroomEscape\\src\\sound\\Sound_Door.wav");
+            File sound = new File("src\\sound\\Sound_Door.wav");
             Clip c = AudioSystem.getClip();
             c.open(AudioSystem.getAudioInputStream(sound));
             c.start();
             
-            //Thread.sleep(c.getMicrosecondLength()/1000);
         }
         catch(Exception e)
         {
@@ -33,12 +32,11 @@ public class Sound {
     {
         try
         {
-            File sound = new File("F:\\ClassroomEscape2\\Classroom-Escape\\ClassroomEscape\\src\\sound\\Sound_Wrong.wav");
+            File sound = new File("src\\sound\\Sound_Wrong.wav");
             Clip c = AudioSystem.getClip();
             c.open(AudioSystem.getAudioInputStream(sound));
             c.start();
             
-            //Thread.sleep(c.getMicrosecondLength()/1000);
         }
         catch(Exception e)
         {
